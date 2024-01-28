@@ -1,0 +1,140 @@
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+    --color-primary-dark: #31261a;
+    --color-primary-light: #FFF;
+    --color-brand-light: #2B7FFF;
+    --color-brand-dark: #011C44;
+}
+
+body{
+    color: var(--color-brand-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+address {
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.button{
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+    border: 2px solid var(--color-brand-light);
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: var(--color-brand-dark);
+}
+
+.button-text{
+    font-size: 12px;
+}
+
+.link{
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+
+.hero-title{
+    color: var(--color-brand-light);
+    text-align: left;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+/* section-title */
+.section-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.accent{
+    color: var(--color-brand-light);
+}
+
+.accent-color {
+    color: var(--color-brand-light);
+    text-transform: capitalize;
+}
+
+/* about */
+.about-text{
+   font-size: 22px;
+   line-height: initial;
+    
+}
+
+.about-text-up{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* procedures-section */
+.procedures-title{
+    color: var(--color-primary-light);
+    font-size: 22px;
+    background-color: var(--color-brand-dark);
+   
+}
+
+.box{
+    text-align: right;
+}
+
+.address-link{
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.address-link:hover {
+    color: var(--color-brand-light);
+}
+
+.address-copyright{
+    font-size: 14px;
+    color: #747272;
+}
