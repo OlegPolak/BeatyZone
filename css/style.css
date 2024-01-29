@@ -40,12 +40,28 @@
     --color-brand-dark: #011C44;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     color: var(--color-brand-dark);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
 }
 
 address {
@@ -64,6 +80,7 @@ ul{
     border-radius: 32px;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 14px;
 }
 
 .button:hover{
@@ -85,13 +102,23 @@ ul{
     font-weight: 600;
 }
 
+.hero-section{
+    padding: 160px 667px 270px 244px ;
+}
+
+.hero-text{
+    margin-bottom: 16px;
+}
+
 .hero-title{
+    width: 529px;
+    margin-bottom: 40px;
     color: var(--color-brand-light);
     font-family: "Play", sans-serif;
     text-align: left;
     font-size: 140px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 0.9;
     text-transform: capitalize;
 }
 
@@ -113,16 +140,50 @@ ul{
     text-transform: capitalize;
 }
 
+.about-section{
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 88px;
+}
+
+
+.why-section{
+    padding-top: 88px;
+    padding-bottom: 48px;
+}
+
+.procedures-section{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.contact-section{
+    padding-top: 48px;
+    padding-bottom: 96px;
+}
+
 /* about */
+.about-title {
+    margin-bottom: 40px;
+}
+
 .about-text{
    font-size: 22px;
    line-height: initial;
-    
+}
+
+.about-margin{
+    margin-bottom: 40px;
 }
 
 .about-text-up{
     text-transform: capitalize;
     font-weight: 600;
+}
+
+/* why */
+.title-margin{
+    margin-bottom: 48px;
 }
 
 /* procedures-section */
@@ -135,6 +196,10 @@ ul{
 
 .box{
     text-align: right;
+}
+
+.sign-title{
+    margin-bottom: 32px;
 }
 
 .address-link{
