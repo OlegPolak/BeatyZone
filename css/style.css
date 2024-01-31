@@ -103,7 +103,7 @@ ul{
 /* Link */
 
 .link{
-    color: var(--color-primary-light);
+    color: var(--color-brand-dark);
     text-decoration: none;
 }
 
@@ -236,7 +236,7 @@ ul{
 /* Address */
 
 .address-link{
-    color: var(--color-primary-light);
+    color: var(--color-brand-dark);
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
