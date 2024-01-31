@@ -17,22 +17,29 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <a href="./index.html">
-                    <img src="./image/logobeaty.svg" alt="Лого Beaty Zone">
-                </a>
-                <ul>
-                    <li><a class="link" href="#about-section">Про нас</a></li>
-                    <li><a class="link" href="#why-section">Чому ми</a></li>
-                    <li><a class="link" href="#procedures-section">Наші процедури</a></li>
-                    <li><a class="link" href="#contact-section">Контакти</a></li>
-                    <li><a class="address-link" href="tel:+380960000007"><img src="./image/telephone.svg"
-                                alt="Посилання на телефон "> </a></li>
-                    <li><a href="#"><img src="./image/facebook.svg" alt="Посилання на Facebook"></a></li>
-                    <li><a href="#"><img src="./image/instagram.svg" alt="Посилання на Instagram "></a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header-container">
+                <nav class="header-nav">
+                    <a href="./index.html">
+                        <img src="./image/logobeaty.svg" alt="Лого Beaty Zone">
+                    </a>
+                    <ul class="header-menu">
+                        <li><a class="link" href="#about-section">Про нас</a></li>
+                        <li><a class="link" href="#why-section">Чому ми</a></li>
+                        <li><a class="link" href="#procedures-section">Наші процедури</a></li>
+                        <li><a class="link" href="#contact-section">Контакти</a></li>
+                    </ul>
+                </nav>
+                <address>
+                    <ul class="header-address">
+                        <li><a class="address-link" href="tel:+380960000007"><img src="./image/telephone.svg"
+                                    alt="Посилання на телефон "> </a>
+                        </li>
+                        <li><a href="#"><img src="./image/facebook.svg" alt="Посилання на Facebook"></a></li>
+                        <li><a href="#"><img src="./image/instagram.svg" alt="Посилання на Instagram "></a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
         </div>
     </header>
 
@@ -49,41 +56,52 @@
         </section>
         <section class="about-section" id="about-section">
             <div class="container">
-                <h2 class="about-title section-title">Перевтілюйтесь в <span class="accent-color">Beauty zone!</span>
-                </h2>
-                <p class="about-margin about-text">Наша косметологічна клініка пропонує вам професійні послуги
-                    з догляду за шкірою обличчя та тіла.</p>
-                <p class="about-text">B <span class="about-text-up">Beauty Zone</span> ми гарантуємо найвищі стандарти
-                    якості
-                    та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою
-                    красу та
-                    молодість.
-                    З нами краса назавжди!</p>
-                <img src="./image/faceone.jpg" alt="Обличчя до процедури">
-                <img src="./image/facetwo.jpg" alt="Обличчя після процедури">
+                <div class="about-container">
+                    <div class="about-content">
+                        <h2 class="about-title section-title">Перевтілюйтесь в <span class="accent-color">Beauty
+                                zone!</span>
+                        </h2>
+                        <p class="about-margin about-text">Наша косметологічна клініка пропонує вам професійні послуги
+                            з догляду за шкірою обличчя та тіла.</p>
+                        <p class="about-text">B <span class="about-text-up">Beauty Zone</span> ми гарантуємо найвищі
+                            стандарти
+                            якості
+                            та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати
+                            свою
+                            красу та
+                            молодість.
+                            З нами краса назавжди!</p>
+                    </div>
+                    <div class="about-face">
+                        <img class="face" src="./image/faceone.jpg" alt="Обличчя до процедури">
+                        <img class="face facetwo" src="./image/facetwo.jpg" alt="Обличчя після процедури">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="why-section" id="why-section">
             <div class="container">
                 <h2 class="title-margin section-title">Чому люди <span class="accent">обирають нас</span></h2>
-                <ul>
+                <ul class="why-container">
                     <li>
-                        <article>
+                        <article class="border">
                             <h2><img src="./image/materials-science.svg" alt="#"></h2>
-                            <p>Всі наші косметологи мають вищу медичну освіту
+                            <p class="why-text">Всі наші косметологи мають вищу медичну освіту
                                 та стаж роботи від 5 років</p>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="border">
                             <h2><img src="./image/medicinecosmeticsbottle.svg" alt="#"></h2>
-                            <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
+                            <p class="why-text">Використовуємо тільки професійне обладнання та косметику, перевірену
+                                часом</p>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="border">
                             <h2><img src="./image/crown-light.svg" alt="#"></h2>
-                            <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+                            <p class="why-text">Наша мета - підкреслити переваги та приховати недоліки, а не переробити
+                            </p>
                         </article>
                     </li>
                 </ul>
@@ -94,20 +112,20 @@
         <section class="procedures-section" id="procedures-section">
             <div class="container">
                 <h2 class="title-margin section-title">Наші <span class="accent">процедури</span></h2>
-                <ul>
+                <ul class="procedures-container">
                     <li>
-                        <article>
+                        <article class="border fics">
                             <h3 class="procedures-title">Маски для обличчя</h3>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="border fics">
                             <h3 class="procedures-title">Ін'єкції
                                 для обличчя</h3>
                         </article>
                     </li>
                     <li>
-                        <article>
+                        <article class="border fics">
                             <h3 class="procedures-title">Очищення
                                 обличчя</h3>
                         </article>

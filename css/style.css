@@ -72,6 +72,8 @@ address {
 
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* ///// */
@@ -109,10 +111,40 @@ ul{
 
 .link:hover{
     color: var(--color-brand-light);
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 /* ///// */
+
+/* Header */
+.header-container{
+    display: flex;
+    /* margin: 32px auto; */
+    gap: 30px;
+    height: 106px;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.header-menu{
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-address {
+    display: flex;
+    gap: 32px;
+    flex-grow: 1;
+    justify-content: center;
+}
 
 /* Hero */
 
@@ -158,8 +190,28 @@ ul{
 }
 
 /* ///// */
-
+.face{
+    width: 335px;
+    height: 328px;
+    border-radius: 200px;
+}
 /* About */
+
+.about-container{
+    display: flex;
+    gap: 28px;
+}
+
+.about-face{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.about-face .facetwo{
+    margin-left: 196px;
+}
 
 .about-section{
     text-align: left;
@@ -169,11 +221,14 @@ ul{
 
 .about-title {
     margin-bottom: 40px;
+    width: 529px;
+    text-align: left;
 }
 
 .about-text {
     font-size: 22px;
     line-height: initial;
+    width: 600px;
 }
 
 .about-margin {
@@ -198,6 +253,16 @@ ul{
     margin-bottom: 48px;
 }
 
+.why-text{
+    width: 252px;
+}
+
+.why-container{
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
 /* ////// */
 
 /* Procedures  */
@@ -214,7 +279,29 @@ ul{
 
 }
 
+.procedures-container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
 /* ////// */
+
+.border{
+    border: 3px solid var(--color-brand-dark);
+    border-radius: 16px;
+    padding: 24px 32px;
+    text-align: center;
+}
+
+.border .fics {
+    border: 3px solid var(--color-brand-dark);
+    border-radius: 16px;
+    padding: 24px 32px;
+    text-align: center;
+    width: 767px;
+    height: 511px;
+}
 
 /* Contact */
 
