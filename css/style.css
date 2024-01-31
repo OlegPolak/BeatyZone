@@ -40,6 +40,8 @@
     --color-brand-dark: #011C44;
 }
 
+/* Basic */
+
 *{
     box-sizing: border-box;
 }
@@ -72,6 +74,10 @@ ul{
     list-style-type: none;
 }
 
+/* ///// */
+
+/* Button */
+
 .button{
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
@@ -92,6 +98,10 @@ ul{
     font-size: 12px;
 }
 
+/* ///// */
+
+/* Link */
+
 .link{
     color: var(--color-primary-light);
     text-decoration: none;
@@ -101,6 +111,10 @@ ul{
     color: var(--color-brand-light);
     font-weight: 600;
 }
+
+/* ///// */
+
+/* Hero */
 
 .hero-section{
     padding: 160px 667px 270px 244px ;
@@ -122,7 +136,10 @@ ul{
     text-transform: capitalize;
 }
 
+/* ///// */
+
 /* section-title */
+
 .section-title{
     font-family: "Play", sans-serif;
     font-size: 64px;
@@ -140,58 +157,70 @@ ul{
     text-transform: capitalize;
 }
 
+/* ///// */
+
+/* About */
+
 .about-section{
     text-align: left;
     padding-top: 40px;
     padding-bottom: 88px;
 }
 
+.about-title {
+    margin-bottom: 40px;
+}
+
+.about-text {
+    font-size: 22px;
+    line-height: initial;
+}
+
+.about-margin {
+    margin-bottom: 40px;
+}
+
+.about-text-up {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* ///// */
+
+/* WHY */
 
 .why-section{
     padding-top: 88px;
     padding-bottom: 48px;
 }
 
+.title-margin {
+    margin-bottom: 48px;
+}
+
+/* ////// */
+
+/* Procedures  */
+
 .procedures-section{
     padding-top: 48px;
     padding-bottom: 48px;
 }
 
-.contact-section{
-    padding-top: 48px;
-    padding-bottom: 96px;
-}
-
-/* about */
-.about-title {
-    margin-bottom: 40px;
-}
-
-.about-text{
-   font-size: 22px;
-   line-height: initial;
-}
-
-.about-margin{
-    margin-bottom: 40px;
-}
-
-.about-text-up{
-    text-transform: capitalize;
-    font-weight: 600;
-}
-
-/* why */
-.title-margin{
-    margin-bottom: 48px;
-}
-
-/* procedures-section */
-.procedures-title{
+.procedures-title {
     color: var(--color-primary-light);
     font-size: 22px;
     background-color: var(--color-brand-dark);
-   
+
+}
+
+/* ////// */
+
+/* Contact */
+
+.contact-section{
+    padding-top: 48px;
+    padding-bottom: 96px;
 }
 
 .box{
@@ -201,6 +230,10 @@ ul{
 .sign-title{
     margin-bottom: 32px;
 }
+
+/* ////// */
+
+/* Address */
 
 .address-link{
     color: var(--color-primary-light);
@@ -217,3 +250,5 @@ ul{
     font-size: 14px;
     color: #747272;
 }
+
+/* /////// */
