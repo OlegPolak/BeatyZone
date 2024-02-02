@@ -98,6 +98,7 @@ ul{
 
 .button-text{
     font-size: 12px;
+    width: 238px;
 }
 
 /* ///// */
@@ -168,6 +169,14 @@ ul{
     text-transform: capitalize;
 }
 
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+}
+
 /* ///// */
 
 /* section-title */
@@ -210,7 +219,7 @@ ul{
 }
 
 .about-face .facetwo{
-    margin-left: 196px;
+    margin-left: 168px;
 }
 
 .about-section{
