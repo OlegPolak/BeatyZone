@@ -57,9 +57,10 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1264px;
+    max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
+    border: 3px solid #011C44;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -75,6 +76,8 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+
 
 /* ///// */
 
@@ -110,7 +113,16 @@ ul{
     text-decoration: none;
 }
 
+.footer-link{
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
 .link:hover{
+    color: var(--color-brand-light);
+    /* font-weight: 600; */
+}
+.footer-link:hover{
     color: var(--color-brand-light);
     /* font-weight: 600; */
 }
@@ -118,11 +130,12 @@ ul{
 /* ///// */
 
 /* Header */
+
 .header-container{
     display: flex;
     /* margin: 32px auto; */
     gap: 30px;
-    height: 106px;
+    /* height: 106px; */
     align-items: center;
 }
 
@@ -150,7 +163,9 @@ ul{
 /* Hero */
 
 .hero-section{
-    padding: 160px 667px 270px 244px ;
+    background-image: url(../image/cosmetolog-office.jpeg);
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 .hero-text{
@@ -175,6 +190,10 @@ ul{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px;
+    width: 1440px;
+    height: 658px;
+    padding: 160px 667px 270px 244px;
+    background: linear-gradient(94.33deg, rgb(255, 255, 255) 30.533%, rgba(255, 255, 255, 0.85) 41.2%, rgba(255, 255, 255, 0.19) 58.516%, rgba(255, 255, 255, 0) 72.621%);
 }
 
 /* ///// */
@@ -284,14 +303,12 @@ ul{
 .procedures-title {
     color: var(--color-primary-light);
     font-size: 22px;
-    background-color: var(--color-brand-dark);
-
 }
 
 .procedures-container{
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 16px;
 }
 
 /* ////// */
@@ -303,14 +320,42 @@ ul{
     text-align: center;
 }
 
-.border .fics {
-    border: 3px solid var(--color-brand-dark);
-    border-radius: 16px;
-    padding: 24px 32px;
+.fics{
+    background-image: linear-gradient(180.00deg, rgba(1, 28, 68, 0) 48.529%, rgba(1, 28, 68, 0.73) 84.641%, rgb(1, 28, 68) 101.43%);
+    border-radius: 4px 120px 4px 120px;
+    padding: 372px 77px 32px 115px;
     text-align: center;
-    width: 767px;
-    height: 511px;
+    width: 344px;
+    height: 456px;
 }
+
+/* .fics-mask {
+    background-image: url('../image/procedure-mask.jpeg');
+    background-position: center;
+    border-radius: 4px 120px 4px 120px;
+    padding: 372px 77px 32px 115px;
+    text-align: center;
+    width: 344px;
+    height: 456px;
+}
+.fics-injection {
+    background-image: url('../image/procedure-injection.jpeg');
+    background-position: center;
+    border-radius: 4px 120px 4px 120px;
+    padding: 372px 77px 32px 115px;
+    text-align: center;
+    width: 344px;
+    height: 456px;
+}
+.fics-cleaning {
+    background-image: url('../image/procedure-cleaning.jpeg');
+    background-position: top;
+    border-radius: 4px 120px 4px 120px;
+    padding: 372px 77px 32px 115px;
+    text-align: center;
+    width: 344px;
+    height: 456px;
+}  */
 
 /* Contact */
 
@@ -319,9 +364,7 @@ ul{
     padding-bottom: 96px;
 }
 
-.box{
-    text-align: right;
-}
+
 
 .sign-title{
     margin-bottom: 32px;
@@ -332,7 +375,7 @@ ul{
 /* Address */
 
 .address-link{
-    color: var(--color-brand-dark);
+    color: var(--color-primary-light);
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
@@ -348,3 +391,11 @@ ul{
 }
 
 /* /////// */
+
+.footer{
+    background-color: var(--color-brand-dark);
+    background-image: url('../image/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
