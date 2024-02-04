@@ -138,17 +138,25 @@
         <section class="contact-section" id="contact-section">
             <div class="container">
                 <h2 class="title-margin section-title">Як нас <span class="accent">знайти</span></h2>
-                <div>
-                    <h4 class="sign-title">Запишіться <span class="accent">безкоштовно</span>
-                        та отримайте подарунок</h4>
-                    <button class="button" type="button">Замовити дзвінок</button>
-                    <!-- phone -->
+                <div class="contact-container">
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706445470821!5m2!1suk!2sua"
+                            width="600" height="481" style="border:0; border-radius:32px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="box-sing">
+                        <h4 class="sign-title">Запишіться <span class="accent">безкоштовно</span>
+                            та отримайте подарунок</h4>
+                        <button class="button contact" type="button">Замовити дзвінок</button>
+                        <!-- phone -->
+                        <p class="text-contact">Натискаючи на кнопку я погоджуюсь <a class="text-contact highlight"
+                                href="#">з
+                                політикою
+                                конфіденційності</a></p>
+                    </div>
                 </div>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1706445470821!5m2!1suk!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -156,35 +164,45 @@
 
     <footer class="footer">
         <div class="container">
-            <nav>
-                <a href="./index.html">
-                    <img src="./image/logobeaty.svg" alt="Лого Beaty Zone">
-                </a>
-                <ul>
-                    <li><a class="footer-link" href="#about-section">Про нас</a></li>
-                    <li><a class="footer-link" href="#why-section">Чому ми</a></li>
-                    <li><a class="footer-link" href="#procedures-section">Наші процедури</a></li>
-                    <li><a class="footer-link" href="#contact-section">Контакти</a></li>
-                </ul>
-            </nav>
-            <address>
-                <ul>
-                    <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                    <li><a class="address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                    <li><a class="address-link" href="https://maps.app.goo.gl/FTAmWWpmxCksTNbc8" target=_blank>Україна,
-                            м.
-                            Київ,
-                            вул. Тараса Шевченка 5</a></li>
-                    <li><a href="#">
-                            <!-- face -->
-                        </a></li>
-                    <li><a href="#">
-                            <!-- inst -->
-                        </a></li>
-                </ul>
-                <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
-                <p class="address-copyright">&copy; 2022 Дані захищені</p>
-            </address>
+            <div class="footer-container">
+                <div class="footer-nav">
+                    <nav>
+                        <a href="./index.html">
+                            <img src="./image/logobeaty.svg" alt="Лого Beaty Zone">
+                        </a>
+                        <ul class="footer-menu">
+                            <li><a class="footer-link" href="#about-section">Про нас</a></li>
+                            <li><a class="footer-link" href="#why-section">Чому ми</a></li>
+                            <li><a class="footer-link" href="#procedures-section">Наші процедури</a></li>
+                            <li><a class="footer-link" href="#contact-section">Контакти</a></li>
+                        </ul>
+                    </nav>
+                    <address class="footer-address">
+                        <ul class="footer-menu">
+                            <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                            <li><a class="address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                            <li><a class="address-link" href="https://maps.app.goo.gl/FTAmWWpmxCksTNbc8"
+                                    target=_blank>Україна,
+                                    м.
+                                    Київ,
+                                    вул. Тараса Шевченка 5</a></li>
+
+
+                            <li><a class="address-link" href="tel:+380960000007"><img src="./image/telephone-light.svg"
+                                        alt="Посилання на телефон ">
+                                </a>
+                            </li>
+                            <li><a href="#"><img src="./image/facebook-light.svg" alt="Посилання на Facebook"></a>
+                            </li>
+                            <li><a href="#"><img src="./image/instagram-light.svg" alt="Посилання на Instagram "></a>
+                        </ul>
+                        <div class="flex-copy">
+                            <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
+                            <p class="address-copyright">&copy;2022 Дані захищені</p>
+                        </div>
+                    </address>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

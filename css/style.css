@@ -57,7 +57,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1288px;
+    max-width: 1415px;
     margin: 0 auto;
     padding: 0 24px;
     border: 3px solid #011C44;
@@ -94,9 +94,20 @@ ul{
     margin-bottom: 14px;
 }
 
+.button.contact{
+    width: 281px;
+    height: 53px;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
 .button:hover{
     background-color: transparent;
     color: var(--color-brand-dark);
+}
+
+.button.contact:hover{
+    background-color: var(--color-primary-light);
 }
 
 .button-text{
@@ -364,10 +375,51 @@ ul{
     padding-bottom: 96px;
 }
 
-
+.contact-container{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
 
 .sign-title{
-    margin-bottom: 32px;
+    margin: 48px auto auto;
+    color: var(--color-primary-light);
+    max-width: 277px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text-contact{
+    max-width: 213px;
+    height: 36px;
+    text-align: center;
+    font-size: 12px;
+    color: #747272;
+    margin: 0 auto 48px;
+}
+
+.text-contact.highlight:hover{ 
+    color: var(--color-brand-light);
+}
+
+.maps{
+    display: flex;
+}
+
+.box-sing{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: var(--color-brand-dark);
+    background-image: url('../image/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 32px;
+    width: 423px;
+    height: 481px;
 }
 
 /* ////// */
@@ -392,10 +444,43 @@ ul{
 
 /* /////// */
 
+.footer-container{
+    display: flex;
+    align-content: center;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 186px;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 192px;
+}
+.footer-menu.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 192px;
+    gap: 24px;
+}
+
+.flex-copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .footer{
     background-color: var(--color-brand-dark);
     background-image: url('../image/footer-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 278px;
 }
