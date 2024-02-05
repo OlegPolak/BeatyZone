@@ -57,10 +57,9 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1415px;
+    max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
-    border: 3px solid #011C44;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -171,13 +170,26 @@ ul{
     justify-content: center;
 }
 
+.header-icon{
+    fill: var(--color-brand-dark);
+}
+.header-icon:hover{
+    fill: var(--color-brand-light);
+}
+
 /* Hero */
 
 .hero-section{
-    background-image: url(../image/cosmetolog-office.jpeg);
+    /* background-image: url(../image/cosmetolog-office.jpeg);
     background-repeat: no-repeat;
     background-position: right top;
-}
+    width: 100%; */
+    background-image: url('../image/office.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+} 
 
 .hero-text{
     margin-bottom: 16px;
@@ -201,10 +213,9 @@ ul{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px;
-    width: 1440px;
+    /* width: 1288px; */
     height: 658px;
     padding: 160px 667px 270px 244px;
-    background: linear-gradient(94.33deg, rgb(255, 255, 255) 30.533%, rgba(255, 255, 255, 0.85) 41.2%, rgba(255, 255, 255, 0.19) 58.516%, rgba(255, 255, 255, 0) 72.621%);
 }
 
 /* ///// */
@@ -239,6 +250,7 @@ ul{
 .about-container{
     display: flex;
     gap: 28px;
+    justify-content: center;
 }
 
 .about-face{
@@ -322,10 +334,30 @@ ul{
     gap: 16px;
 }
 
-/* ////// */
+.carousel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    fill: var(--color-brand-dark);
+    border: 1px solid var(--color-brand-dark);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.carousel-button:hover {
+    background-color: var(--color-brand-light);
+    border: var(--color-primary-light);
+    fill: var(--color-primary-light);
+}
+
 
 .border{
-    border: 3px solid var(--color-brand-dark);
+    border: 3px solid var(--color-brand-dark);   
     border-radius: 16px;
     padding: 24px 32px;
     text-align: center;
@@ -339,6 +371,8 @@ ul{
     width: 344px;
     height: 456px;
 }
+
+/* ////// */
 
 
 
@@ -442,6 +476,13 @@ ul{
     justify-content: flex-start;
     max-width: 192px;
     gap: 24px;
+}
+
+.footer-icon{
+    fill: var(--color-primary-light);
+}
+.footer-icon:hover{
+    fill: var(--color-brand-light);
 }
 
 .flex-copy{
