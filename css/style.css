@@ -149,9 +149,8 @@ ul{
 
 .header-container{
     display: flex;
-    /* margin: 32px auto; */
     gap: 30px;
-    /* height: 106px; */
+    background-color: transparent;
     align-items: center;
 }
 
@@ -186,15 +185,11 @@ ul{
 /* Hero */
 
 .hero-section{
-    /* background-image: url(../image/cosmetolog-office.jpeg);
+    background-image: url('../image/cos-office.png');
     background-repeat: no-repeat;
-    background-position: right top;
-    width: 100%; */
-    background-image: url('../image/office.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 } 
 
 .hero-text{
@@ -250,6 +245,12 @@ ul{
     width: 335px;
     height: 328px;
     border-radius: 200px;
+}
+
+.background{
+    background-image: url('../image/background-blue.png');
+    background-position: center 1400px;
+    background-repeat: no-repeat;
 }
 /* About */
 
@@ -383,7 +384,7 @@ ul{
 
 
 .border{
-    border: 3px solid var(--color-brand-dark);   
+    background-color: var(--color-primary-light);  
     border-radius: 16px;
     padding: 24px 32px;
     text-align: center;
