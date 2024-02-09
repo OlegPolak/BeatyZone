@@ -464,13 +464,25 @@ ul{
 /* Address */
 
 .footer {
+    position: relative;
     background-color: var(--color-brand-dark);
     background-image: url('../image/footer-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 32px 0;
-    /* height: 278px; */
+    height: 278px;
+}
+
+.footer::after{ 
+    position: absolute;
+    width: 240px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-image: url('../image/pexels-photo.png');
+    content: '';
 }
 
 .address-link{
@@ -522,6 +534,67 @@ ul{
 
 /* /////// */
 
+/* MODAL */
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 28, 68, 0.73);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: var(--color-brand-dark);
+    background-image: url('../image/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 720px;
+    height: 680px;
+    border-radius: 32px ;
+}
 
 
 
+.modal-btn-close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.title-modal{
+    font-family: 'Play';
+    width: 430px;
+    height: 150px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    margin: 40px auto;
+    text-align: center;
+    color: var(--color-primary-light);
+
+}
+
+.text-modal{
+    margin: 0 auto 32px;
+}
+
+.button.contact.btn-modal{
+    margin: 250px auto 8px
+
+}

@@ -59,7 +59,7 @@
                     <div class="hero-container">
                         <p class="hero-text">Косметологічна клініка</p>
                         <h1 class="hero-title">Beauty Zone</h1>
-                        <button class="button" type="button">Замовити дзвінок</button>
+                        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
                         <!-- phone -->
                         <p class="button-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
                     </div>
@@ -167,14 +167,14 @@
                 <h2 class="title-margin section-title">Як нас <span class="accent">знайти</span></h2>
                 <div class="contact-container">
 
-                    <iframe
+                    <iframe class="maps"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1707415245719!5m2!1suk!2sua"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="box-sing">
                         <h4 class="sign-title">Запишіться <span class="accent">безкоштовно</span>
                             та отримайте подарунок</h4>
-                        <button class="button contact" type="button">Замовити дзвінок</button>
+                        <button class="button contact" type="button">Записатися безкоштовно</button>
                         <!-- phone -->
                         <p class="text-contact">Натискаючи на кнопку я погоджуюсь <a class="text-contact highlight"
                                 href="#">з
@@ -237,6 +237,25 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-btn-close" type="button">
+                close
+            </button>
+            <h2 class="title-modal">Замовити дзвінок</h2>
+            <h4 class="sign-title text-modal">Запишіться <span class="accent">безкоштовно</span>
+                та отримайте подарунок</h4>
+            <button class="button contact btn-modal" type="button">Записатися безкоштовно</button>
+            <!-- phone -->
+            <p class="text-contact">Натискаючи на кнопку я погоджуюсь
+                <a class="text-contact highlight" href="#">з політикою конфіденційності</a>
+            </p>
+
+
+        </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
