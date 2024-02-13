@@ -55,7 +55,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
-    position: relative;
+    /* position: relative; */
 }
 
 .container{
@@ -98,6 +98,7 @@ ul{
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 14px;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .button.contact{
@@ -128,11 +129,13 @@ ul{
 .link{
     color: var(--color-brand-dark);
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-link{
     color: var(--color-primary-light);
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .link:hover{
@@ -186,6 +189,7 @@ ul{
 
 .header-icon{
     fill: var(--color-brand-dark);
+    transition: fill 0.3s;
 }
 .header-icon:hover{
     fill: var(--color-brand-light);
@@ -394,6 +398,11 @@ ul{
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.carousel-button.right-btn{
+   transform: rotate(180deg);
 }
 
 
@@ -418,6 +427,11 @@ ul{
     text-align: center;
     width: 344px;
     height: 456px;
+    transition: transform 0.3s;
+}
+
+.fics:hover{
+    transform: scale(1.05);
 }
 
 /* ////// */
@@ -454,6 +468,7 @@ ul{
     font-size: 12px;
     color: #747272;
     margin: 0 auto 48px;
+    transition: color 0.3s;
 }
 
 .text-contact.highlight:hover{ 
@@ -512,6 +527,7 @@ ul{
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-container {
@@ -539,6 +555,7 @@ ul{
 
 .footer-icon {
     fill: var(--color-primary-light);
+    transition: fill 0.3s;
 }
 
 .footer-icon:hover {
@@ -567,7 +584,9 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
     background-color: rgba(1, 28, 68, 0.73);
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -601,8 +620,10 @@ ul{
 
 .title-modal{
     font-family: 'Play';
-    width: 430px;
-    height: 150px;
+    width: 100%;
+    max-width: 430px;
+    height: 100%;
+    max-height: 150px;
     font-size: 64px;
     font-weight: 700;
     line-height: 74px;
