@@ -38,6 +38,7 @@
     --color-primary-light: #FFF;
     --color-brand-light: #2B7FFF;
     --color-brand-dark: #011C44;
+    --color-secondary: #747272;
 }
 
 /* Basic */
@@ -81,6 +82,15 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.visually-hidden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 
@@ -466,7 +476,7 @@ ul{
     height: 36px;
     text-align: center;
     font-size: 12px;
-    color: #747272;
+    color: var(--color-secondary);
     margin: 0 auto 48px;
     transition: color 0.3s;
 }
@@ -568,7 +578,7 @@ ul{
 
 .address-copyright{
     font-size: 14px;
-    color: #747272;
+    color: var(--color-secondary);
 }
 
 /* /////// */
@@ -599,6 +609,7 @@ ul{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    align-items: center;
     background-color: var(--color-brand-dark);
     background-image: url('../image/footer-background.png');
     background-repeat: no-repeat;
@@ -637,7 +648,36 @@ ul{
     margin: 0 auto 32px;
 }
 
+.form-field{
+    margin-bottom: 24px;
+    width: 310px;
+    height: 52px;
+}
+
+.form-label{
+    display: block;
+}
+
+.form-input{
+    padding: 18px 32px;
+    width: 100%;
+   
+    border: 2px solid var(--color-secondary);
+    border-radius: 32px;
+    background-color: transparent;
+    margin-bottom:24px ;
+}
+
+.form-input:focus{
+    background-color: var(--color-secondary);
+    outline: none;
+}
+
+.form-input::placeholder{
+    color: var(--color-primary-light);
+}
+
 .button.contact.btn-modal{
-    margin: 250px auto 8px
+    /* margin: 250px auto 8px */
 
 }
