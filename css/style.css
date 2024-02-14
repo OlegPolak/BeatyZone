@@ -462,7 +462,7 @@ ul{
 }
 
 .sign-title{
-    margin: 48px auto auto;
+    margin: 48px auto 32px;
     color: var(--color-primary-light);
     max-width: 277px;
     height: 52px;
@@ -494,8 +494,9 @@ ul{
 
 .box-sing{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
+    align-items: center;
     background-color: var(--color-brand-dark);
     background-image: url('../image/footer-background.png');
     background-repeat: no-repeat;
@@ -580,6 +581,7 @@ ul{
     font-size: 14px;
     color: var(--color-secondary);
 }
+
 
 /* /////// */
 
@@ -675,9 +677,12 @@ ul{
 
 .form-input::placeholder{
     color: var(--color-primary-light);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .button.contact.btn-modal{
-    /* margin: 250px auto 8px */
-
+    display: block;
+    margin: 0 auto 8px;
 }
