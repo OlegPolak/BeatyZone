@@ -1,256 +1,15 @@
-/* roboto-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+@import './utils/fonts';
+@import './utils/variables';
 
-/* roboto-700 - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+@import './base';
 
-.play-regular {
-    font-family: "Play", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+@import './utils/utils';
 
-.play-bold {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero';
 
-:root {
-    --color-primary-dark: #31261a;
-    --color-primary-light: #FFF;
-    --color-brand-light: #2B7FFF;
-    --color-brand-dark: #011C44;
-    --color-secondary: #747272;
-}
-
-/* Basic */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    color: var(--color-brand-dark);
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
-    /* position: relative; */
-}
-
-.container {
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-}
-
-a {
-    display: inline-block;
-}
-
-address {
-    font-style: normal;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-
-
-/* ///// */
-
-/* Button */
-
-.button {
-    color: var(--color-primary-light);
-    background-color: var(--color-brand-light);
-    border: 2px solid var(--color-brand-light);
-    padding: 16px 32px;
-    border-radius: 32px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 14px;
-    transition: color 0.5s, background-color 0.5s;
-}
-
-.button.contact {
-    width: 281px;
-    height: 53px;
-    align-self: center;
-    margin-bottom: 8px;
-}
-
-.button:hover {
-    background-color: transparent;
-    color: var(--color-brand-dark);
-}
-
-.button.contact:hover {
-    background-color: var(--color-primary-light);
-}
-
-.button-text {
-    font-size: 12px;
-    width: 238px;
-}
-
-/* ///// */
-
-/* Link */
-
-.link {
-    color: var(--color-brand-dark);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-link {
-    color: var(--color-primary-light);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.link:hover {
-    color: var(--color-brand-light);
-    /* font-weight: 600; */
-}
-
-.footer-link:hover {
-    color: var(--color-brand-light);
-    /* font-weight: 600; */
-}
-
-/* ///// */
-
-/* Header */
-
-.header {
-    position: absolute;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.25);
-    padding: 16px 0;
-}
-
-.header-container {
-    display: flex;
-    gap: 30px;
-    background-color: transparent;
-    align-items: center;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    gap: 30px;
-}
-
-.header-menu {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.header-address {
-    display: flex;
-    gap: 32px;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.header-icon {
-    fill: var(--color-brand-dark);
-    transition: fill 0.3s;
-}
-
-.header-icon:hover {
-    fill: var(--color-brand-light);
-}
-
-/* Hero */
-
-.hero-section {
-    background-image: url('../image/cos-office.png');
-    background-repeat: no-repeat;
-    background-size: 1550px 800px;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-}
-
-.hero-text {
-    margin-bottom: 16px;
-}
-
-.hero-title {
-    width: 529px;
-    margin-bottom: 40px;
-    color: var(--color-brand-light);
-    font-family: "Play", sans-serif;
-    text-align: left;
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 0.9;
-    text-transform: capitalize;
-}
-
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
-    /* width: 1288px; */
-    height: 658px;
-    padding: 90px 667px 270px 244px;
-}
-
-/* ///// */
 
 /* section-title */
 
@@ -272,11 +31,7 @@ ul {
 }
 
 /* ///// */
-.face {
-    width: 335px;
-    height: 328px;
-    border-radius: 200px;
-}
+
 
 .background {
     background-image: url('../image/background-blue.png');
@@ -296,6 +51,12 @@ ul {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
+}
+
+.face {
+    width: 335px;
+    height: 328px;
+    border-radius: 200px;
 }
 
 .about-face {
@@ -369,9 +130,7 @@ ul {
     flex-wrap: wrap;
 }
 
-.why-items {
-    flex-basis: calc((100% - 56px)/3);
-}
+
 
 /* ////// */
 
@@ -438,11 +197,12 @@ ul {
     text-align: center;
 }
 
+
+
 .fics {
     background-image: linear-gradient(180.00deg, rgba(1, 28, 68, 0) 48.529%, rgba(1, 28, 68, 0.73) 84.641%, rgb(1, 28, 68) 101.43%);
     border-radius: 4px 120px 4px 120px;
-    padding: 372px 77px 32px 115px;
-    text-align: center;
+    position: relative;
     width: 344px;
     height: 456px;
     transition: transform 0.3s;
@@ -452,6 +212,21 @@ ul {
     transform: scale(1.05);
 }
 
+.procedures-image {
+    position: absolute;
+    width: 344px;
+    height: 456px;
+    background-position: center;
+    z-index: -1;
+    border-radius: 4px 120px 4px 120px;
+}
+
+.proc-title{
+    display: flex;
+    justify-content: center;
+    padding: 371px 77px 32px 115px;
+    text-align: center;
+}
 /* ////// */
 
 

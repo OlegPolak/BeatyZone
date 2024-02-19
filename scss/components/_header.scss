@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+    padding: 16px 0;
+}
+
+.header-container {
+    display: flex;
+    gap: 30px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-address {
+    display: flex;
+    gap: 32px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-icon {
+    fill: var(--color-brand-dark);
+    transition: fill 0.3s;
+}
+
+.header-icon:hover {
+    fill: var(--color-brand-light);
+}

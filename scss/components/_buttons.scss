@@ -1,0 +1,32 @@
+.button {
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+    border: 2px solid var(--color-brand-light);
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 14px;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.button.contact {
+    width: 281px;
+    height: 53px;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brand-dark);
+}
+
+.button.contact:hover {
+    background-color: var(--color-primary-light);
+}
+
+.button-text {
+    font-size: 12px;
+    width: 238px;
+}
