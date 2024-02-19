@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <!-- style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -177,24 +177,24 @@
                     <div class="box-sing">
                         <h4 class="sign-title">Запишіться <span class="accent">безкоштовно</span>
                             та отримайте подарунок</h4>
-                        <form name="contact-form" autocomplete="off" novalidate>
+                        <form name="contact-form" autocomplete="off">
 
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
                                 <input class="form-input" type="text" id="user-name" name="user-name"
-                                    placeholder="Ваше ім'я та прізвище">
+                                    placeholder="Ваше ім'я та прізвище" minlength="2" maxlength="20" required>
                             </div>
 
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
                                 <input class="form-input" type="tel" id="user-tel" name="user-tel"
-                                    placeholder="Ваш номер телефону">
+                                    placeholder="Ваш номер телефону" pattern="^\[0-9]{12}" required>
                             </div>
 
                             <div class="form-field">
                                 <label class="form-label visually-hidden" for="user-email">Ваша електрона пошта</label>
                                 <input class="form-input" type="email" id="user-email" name="user-email"
-                                    placeholder="Ваша електрона пошта">
+                                    placeholder="Ваша електрона пошта" required>
                             </div>
 
 
@@ -279,23 +279,24 @@
                 та отримайте подарунок</h4>
 
 
-            <form name="modal-form" autocomplete="off" novalidate>
+            <form name="modal-form" autocomplete="off">
 
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
                     <input class="form-input" type="text" id="user-name" name="user-name"
-                        placeholder="Ваше ім'я та прізвище">
+                        placeholder="Ваше ім'я та прізвище" required>
                 </div>
 
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
-                    <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону">
+                    <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
+                        required>
                 </div>
 
                 <div class="form-field">
                     <label class="form-label visually-hidden" for="user-email">Ваша електрона пошта</label>
                     <input class="form-input" type="email" id="user-email" name="user-email"
-                        placeholder="Ваша електрона пошта">
+                        placeholder="Ваша електрона пошта" required>
                 </div>
 
 
