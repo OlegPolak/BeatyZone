@@ -1,0 +1,59 @@
+.about-container {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.face {
+    width: 335px;
+    height: 328px;
+    border-radius: 200px;
+}
+
+.about-face {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.about-face .facetwo {
+    margin-left: 168px;
+}
+
+.about-section {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 88px;
+}
+
+.about-title {
+    margin-bottom: 40px;
+    width: 529px;
+    text-align: left;
+}
+
+.about-text {
+    font-size: 22px;
+    line-height: initial;
+    width: 600px;
+}
+
+.about-margin {
+    margin-bottom: 40px;
+}
+
+.about-margin:last-child {
+    margin-bottom: 0;
+}
+
+.about-text-up {
+    text-transform: capitalize;
+    font-weight: 600;
+}
