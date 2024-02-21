@@ -1,24 +1,28 @@
+
 .why-section {
     padding-top: 88px;
     padding-bottom: 48px;
+
+// &__title {
+//         &--margin {
+//             margin-bottom: 48px;
+//         }
+//     }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 56px;
+        flex-wrap: wrap;
+    }
+
+    // &__items {
+    //     flex-basis: calc((100% - 56px)/3);
+    // }
 }
 
-.title-margin {
-    margin-bottom: 48px;
-}
 
-.title-hidden {
-    display: none;
-    /* visibility: hidden; */
-}
 
-.why-text {
-    width: 252px;
-}
 
-.why-container {
-    display: flex;
-    justify-content: center;
-    gap: 56px;
-    flex-wrap: wrap;
-}
+
+

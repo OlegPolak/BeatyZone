@@ -4,41 +4,39 @@
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.25);
     padding: 16px 0;
-}
 
-.header-container {
+ 
+ &__container {
     display: flex;
     gap: 30px;
     background-color: transparent;
     align-items: center;
-}
-
-.header-nav {
+ }
+ 
+  &__nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
     gap: 30px;
-}
-
-.header-menu {
+  }
+  &__menu {
     display: flex;
     gap: 56px;
     flex-grow: 1;
     justify-content: center;
-}
-
-.header-address {
+  }
+  &__address {
     display: flex;
     gap: 32px;
     flex-grow: 1;
     justify-content: center;
-}
-
-.header-icon {
+  }
+  &__icon {
     fill: var(--color-brand-dark);
     transition: fill 0.3s;
+  }
+  &__icon:hover {
+    fill: var(--color-brand-light);
+  }
 }
 
-.header-icon:hover {
-    fill: var(--color-brand-light);
-}

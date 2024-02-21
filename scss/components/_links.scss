@@ -1,4 +1,4 @@
-.link {
+.header__link {
     color: var(--color-brand-dark);
     text-decoration: none;
     transition: color 0.3s;
@@ -10,7 +10,7 @@
     transition: color 0.3s;
 }
 
-.link:hover {
+.header__link:hover {
     color: var(--color-brand-light);
     /* font-weight: 600; */
 }
