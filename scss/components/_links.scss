@@ -1,21 +1,40 @@
-.header__link {
+.header{
+&__link {
     color: var(--color-brand-dark);
     text-decoration: none;
     transition: color 0.3s;
 }
+&__link:hover {
+        color: var(--color-brand-light);
+        /* font-weight: 600; */
+    }
+}
 
-.footer-link {
+.footer{
+&__link {
     color: var(--color-primary-light);
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.header__link:hover {
+
+&__link:hover {
     color: var(--color-brand-light);
     /* font-weight: 600; */
 }
+}
 
-.footer-link:hover {
+.address{
+
+&__link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+&__link:hover {
     color: var(--color-brand-light);
-    /* font-weight: 600; */
+}
 }
