@@ -1,5 +1,11 @@
 .background {
     background-image: url('../image/background-blue.png');
-    background-position: center 1400px;
+    background-position: center 750px;
+    background-size: auto 2100px;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-desktop){
+        background-position: center 1400px;
+        background-size: auto;
+    }
 }

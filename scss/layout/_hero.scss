@@ -1,35 +1,75 @@
 .hero-section {
     background-image: url('../image/cos-office.png');
     background-repeat: no-repeat;
-    background-size: 1550px 800px;
+    // background-size: 1550px 800px;
+    background-size: cover;
     background-position: center;
     width: 100%;
     height: 700px;
 
+@media  screen and (max-width: $bp-desktop) {
+    height: 500px;
+}
+
 &__text {
+    width: 200px;
+    margin-bottom: 0;
+    text-align: center;
+
+@media  screen and (min-width: $bp-desktop) {
     margin-bottom: 16px;
+}
 }  
 
 &__title {
-    width: 529px;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
     color: var(--color-brand-light);
     font-family: "Play", sans-serif;
-    text-align: left;
-    font-size: 140px;
+    text-align: center;
+    font-size: 54px;
     font-weight: 700;
     line-height: 0.9;
     text-transform: capitalize;
+    margin-bottom: 32px;
+    
+
+    @media screen  and (min-width: $bp-desktop) {
+        width: 529px;
+        margin-bottom: 40px;
+        font-size: 140px;
+        text-align: left;
+    }
 }   
 
 &__container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
-    height: 658px;
-    padding: 90px 667px 270px 244px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+
+
+    @media screen and (min-width: $bp-desktop) {
+        display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0px;
+            height: 658px;
+            padding: 90px 667px 270px 244px;
     }
+    }
+
+&__text-btn{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+}
 }
 

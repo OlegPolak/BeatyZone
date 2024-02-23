@@ -1,7 +1,11 @@
 .about-section {
     text-align: left;
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 88px;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding-top: 40px;
+    }
 
     &__container {
         display: flex;
@@ -12,19 +16,33 @@
     &__content {
         display: flex;
         flex-direction: column;
-        padding-top: 40px;
+        padding-top: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+            padding-top: 40px;
+        }
     }
 
     &__title {
-       margin-bottom: 40px;
-        width: 529px;
+       margin-bottom: 16px;
+        width: 270px;
         text-align: left;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 529px;
+            margin-bottom: 40px;
+        }
     }
 
     &__text {
-        font-size: 22px;
+        font-size: 18px;
         line-height: initial;
-        width: 600px;
+        width: 335px;
+
+        @media screen and (min-width: $bp-desktop) {
+                width: 600px;
+                font-size: 22px;
+            }
     }
 
     &__text{
@@ -36,7 +54,11 @@
      
     &__text{
     &--margin {
-        margin-bottom: 40px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 40px;
+        }
     }
     }
     
@@ -47,9 +69,13 @@
     }
 
     &__face {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop){
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
     }
 
      .face {
