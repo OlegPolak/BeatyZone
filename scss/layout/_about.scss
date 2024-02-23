@@ -1,14 +1,16 @@
 .about-section {
     text-align: left;
     padding-top: 0;
-    padding-bottom: 88px;
+    padding-bottom: 0;
 
     @media screen and (min-width: $bp-desktop) {
         padding-top: 40px;
+        padding-bottom: 88px;
     }
 
     &__container {
         display: flex;
+        align-items: flex-start;
         gap: 28px;
         justify-content: center;
     }
@@ -18,7 +20,7 @@
         flex-direction: column;
         padding-top: 0;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
             padding-top: 40px;
         }
     }
@@ -69,23 +71,36 @@
     }
 
     &__face {
-        display: none;
+       display: none;
 
-        @media screen and (min-width: $bp-desktop){
+        @media screen and (min-width: $bp-tablet) {
             display: flex;
             flex-direction: column;
+            gap: 10px;
+        }
+        @media screen and (min-width: $bp-desktop) {
             gap: 40px;
         }
+        
     }
 
      .face {
-        width: 335px;
-        height: 328px;
+        width: 200px;
+        height: 200px;
         border-radius: 200px;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 335px;
+            height: 328px;
+        }
      }
 
     .facetwo {
-        margin-left: 200px;
+        margin-left: 150px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-left: 200px;
+        }
     }
 }
 
