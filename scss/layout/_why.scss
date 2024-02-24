@@ -3,11 +3,18 @@
     padding-top: 88px;
     padding-bottom: 48px;
 
-// &__title {
-//         &--margin {
-//             margin-bottom: 48px;
-//         }
-//     }
+ &__title {
+    width: 220px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 300px;
+    }
+ @media screen and (min-width: $bp-desktop) {
+     width: 432px;
+    margin-bottom: 48px;
+ }
+ }
 
     &__container {
         display: flex;
@@ -16,9 +23,7 @@
         flex-wrap: wrap;
     }
 
-    // &__items {
-    //     flex-basis: calc((100% - 56px)/3);
-    // }
+   
 }
 
 

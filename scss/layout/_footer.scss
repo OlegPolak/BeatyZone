@@ -36,6 +36,12 @@
     flex-grow: 1;
 }
 
+&__menu{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
 &__icon {
     fill: var(--color-primary-light);
     transition: fill 0.3s;
@@ -43,6 +49,19 @@
 
 &__icon:hover {
     fill: var(--color-brand-light);
+}
+
+&__address-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+&__icon-row {
+    height: 40px;
+    flex-direction: row;
+    display: flex;
+    gap: 24px;
 }
 }
 
@@ -53,16 +72,25 @@
     flex-grow: 1;
 }
 
+&__list{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+&__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 &__copyright {
     font-size: 14px;
     color: var(--color-secondary);
 }
 }
 
-.icon-row{
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 

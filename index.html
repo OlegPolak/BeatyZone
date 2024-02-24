@@ -53,11 +53,11 @@
                         <use href="./image/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="mobile-menu">
+                <!-- <div class="mobile-menu">
                     <button class="mobile-menu__btn-close menu-btn-close" type="button">
                         close
                     </button>
-                    <!-- <nav class="mobile-menu__nav">
+                     <nav class="mobile-menu__nav">
                         <a href="./index.html">
                             <img src="./image/logobeaty.svg" alt="Лого Beaty Zone">
                         </a>
@@ -86,8 +86,8 @@
                                     </svg>
                                 </a></li>
                         </ul>
-                    </address> -->
-                </div>
+                    </address> 
+                </div> -->
             </div>
         </div>
     </header>
@@ -129,8 +129,10 @@
                                 підтримувати свою красу та молодість. З нами краса назавжди!</p>
                         </div>
                         <div class="about-section__face">
-                            <img class="face" src="./image/faceone.jpg" alt="Обличчя до процедури">
-                            <img class="face facetwo" src="./image/facetwo.jpg" alt="Обличчя після процедури">
+                            <img class="face" srcset="./image/faceone.jpg 1x, ./image/faceone@2x.jpg 2x"
+                                src="./image/faceone.jpg" alt="Обличчя до процедури">
+                            <img class="face facetwo" srcset="./image/facetwo.jpg 1x, ./image/facetwo@2x.jpg 2x"
+                                src="./image/facetwo.jpg" alt="Обличчя після процедури">
                         </div>
                     </div>
                 </div>
@@ -138,7 +140,9 @@
 
             <section class="why-section" id="why-section">
                 <div class="container">
-                    <h2 class="title--margin section-title">Чому люди <span class="text-brand-small">обирають нас</span>
+                    <h2 class=" why-section__title title-margin section-title">Чому люди <span
+                            class="text-brand-small">обирають
+                            нас</span>
                     </h2>
                     <ul class="why-section__container">
                         <li class="why-section__items">
@@ -173,7 +177,7 @@
 
             </section>
 
-            <section class="procedures-section" id="procedures-section">
+            <!-- <section class="procedures-section" id="procedures-section">
                 <div class="container">
                     <h2 class="title-margin section-title">Наші <span class="text-brand-small">процедури</span></h2>
                     <div class="procedures-section__container">
@@ -220,7 +224,7 @@
                         </button>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
 
         <section class="contact-section" id="contact-section">
@@ -235,7 +239,7 @@
                     <div class="contact-section__sing">
                         <h4 class="input__title">Запишіться <span class="text-brand-small">безкоштовно</span>
                             та отримайте подарунок</h4>
-                        <form name="contact-form" autocomplete="off">
+                        <form class="contact-section__form" name="contact-form" autocomplete="off">
 
                             <div class="contact-section__form-field input">
                                 <label class="input__label visually-hidden" for="user-name">Ваше ім'я та
@@ -269,11 +273,11 @@
                 </div>
 
             </div>
-        </section> -->
+        </section>
 
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <nav class="footer__nav">
@@ -291,7 +295,7 @@
                     </ul>
                 </nav>
                 <address class="footer__address">
-                    <div class="dilop">
+                    <div class="footer__address-gap">
                         <ul class="address__list">
                             <li><a class="address__link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                             <li><a class="address__link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
@@ -301,7 +305,7 @@
                                     Тараса Шевченка 5</a></li>
                         </ul>
                         <div class="footer__icon-div">
-                            <ul>
+                            <ul class="footer__icon-row">
                                 <li><a href="tel:+380960000007">
                                         <svg class="footer__icon" width="32" height="32">
                                             <use href="./image/icons.svg#icon-telephone"></use>
@@ -332,7 +336,7 @@
                 </address>
             </div>
         </div>
-    </footer>  -->
+    </footer>
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">

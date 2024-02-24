@@ -3,16 +3,29 @@
     padding-bottom: 96px;
 
 &__container {
-        display: flex;
-        gap: 32px;
-        justify-content: center;
+     display: flex;
+     flex-direction: column-reverse;
+    gap: 32px;
+    @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 32px;
+            justify-content: center;
+    }
     }
 
 &__maps {
     display: flex;
     border: none;
     border-radius: 32px;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+
+@media screen and (min-width: $bp-tablet) {
+    width: 600px;
     height: 481px;
+    margin-right: 0;
+}
 }
 
 &__sing {
@@ -26,12 +39,34 @@
     background-size: cover;
     background-position: right;
     border-radius: 32px;
-    width: 423px;
+    width: 350px;
     height: 481px;
+    margin: 0 auto;
+
+@media screen and (min-width: $bp-tablet) {
+        width: 423px;
+        margin-left: 0;
+    }
+ @media screen and (min-width: $bp-desktop) {
+    //  flex-direction: row
+     gap: 32px;
+     justify-content: center;
+ }
 }
 
 &__form-field{
     margin-bottom: 24px; 
+}
+
+&__form{
+
+@media screen and (min-width: $bp-tablet) {
+    width: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 }
 }
 
