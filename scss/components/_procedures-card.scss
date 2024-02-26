@@ -2,16 +2,14 @@
     background-image: linear-gradient(180.00deg, rgba(1, 28, 68, 0) 48.529%, rgba(1, 28, 68, 0.73) 84.641%, rgb(1, 28, 68) 101.43%);
     border-radius: 4px 120px 4px 120px;
     position: relative;
+    max-width: 100%;
     width: 344px;
     height: 456px;
-    transition: transform 0.3s;
-
-    &:hover {
-        transform: scale(1.05);
-    }
+    margin: 0 auto;
 
     &__image {
         position: absolute;
+        max-width: 100%;
         width: 344px;
         height: 456px;
         background-position: center;
@@ -30,4 +28,13 @@
         padding: 371px 77px 32px 115px;
         text-align: center;
     }
+
+    &__width{
+        justify-content: center;
+            display: flex;
+    }
+}
+
+.swiper-slide-active{
+   
 }

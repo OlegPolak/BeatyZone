@@ -34,6 +34,11 @@
     transition: color 0.3s;
 }
 
+&__link.column{
+    width: 190px;
+}
+
+
 &__link:hover {
     color: var(--color-brand-light);
 }
